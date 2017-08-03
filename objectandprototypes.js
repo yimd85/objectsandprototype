@@ -54,13 +54,17 @@ Food.prototype.wash1 = function(){
 // Create a `Carrot` object that inherits from `Vegetable`.
 Carrot= new Vegetable("Carrots");
 
+
+// Create a `Carrot` object that inherits from `Vegetable`.
+Carrot= new Vegetable("Carrots");
+
 console.log(
-  Fuji.sayName(),
-  Gala.sayName(),
-  Fuji.hasskin(),
-  Gala.hasskin(),
-  Fuji.Juice(),
-  Gala.Juice(),
-  Carrot.wash1(),
+  Fuji.sayName()+
+  Gala.sayName()+
+  Fuji.hasskin()+
+  Gala.hasskin()+
+  Fuji.Juice()+
+  Gala.Juice()+
+  Carrot.wash1()+
   Carrot.Juice1()
   )
