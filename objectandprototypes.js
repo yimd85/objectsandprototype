@@ -58,7 +58,7 @@ Carrot= new Vegetable("Carrots");
 // Create a `Carrot` object that inherits from `Vegetable`.
 Carrot= new Vegetable("Carrots");
 
-console.log(
+var x = 
   Fuji.sayName()+
   Gala.sayName()+
   Fuji.hasskin()+
@@ -67,4 +67,4 @@ console.log(
   Gala.Juice()+
   Carrot.wash1()+
   Carrot.Juice1()
-  )
+  
