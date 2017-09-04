@@ -1,6 +1,5 @@
 // * Create a `Food` object.
-function Food(whattoeat){
-  this.whattoeat =whattoeat;
+function Food(){
 }
 
 // All food can be juiced. Add a method to `juice()` the food.
@@ -13,8 +12,6 @@ Food.prototype.sayName = function(){
   console.log('I am food and my name is '+ this.strain);
 }
 
-Fuji = new Apple("Fuji");
-Gala = new Apple("Gala");
 
 // Create a `fruit` object that inherits from Food. Fruits have names. Make sure to save them.
 //Object constructors should be uppercased
@@ -25,7 +22,6 @@ Gala = new Apple("Gala");
 
 function Fruit(name){
   this.name=name;
-
 }
 
 //where it inherits
@@ -43,6 +39,8 @@ function Apple(strain){
 //where it inherits
 Apple.prototype=Object.create(Fruit.prototype)
 
+Fuji = new Apple("Fuji");
+Gala = new Apple("Gala");
 
 // * Create a `Vegetable` object that inherits from Food. Add a method to `wash()` your vegetables. Print that the vegetable is being washed.
 
@@ -70,3 +68,4 @@ var x =
   Carrot.sayName()+
   Carrot.wash()+
   Carrot.juice()
+
